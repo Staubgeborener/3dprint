@@ -19,6 +19,7 @@ fi
 cp $path_printercfg $path_mainsailcfg $path_moonrakercfg $path_timelapsecfg $backup_path
 
 #git
+git rm -rf --cached .env
 git add .
 git commit -m "new backup from $(date +"%d-%m-%y")"
 git push https://"$github_token"@github.com/"$github_username"/"$github_repository".git
