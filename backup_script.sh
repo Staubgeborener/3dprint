@@ -1,5 +1,4 @@
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
-echo $parent_path
 
 #initializing
 github_token=`grep 'github_token=' $parent_path/.env | sed 's/^.*=//'`
@@ -13,12 +12,12 @@ path_timelapsecfg=`grep 'path_timelapsecfg=' $parent_path/.env | sed 's/^.*=//'`
 
 backup_folder=`grep 'backup_folder=' $parent_folder/.env | sed 's/^.*=//'`
 
-echo $github_token $github_repository $github_username $path_printercfg $path_mainsailcfg $path_moonrakercfg $path_timelapsecfg
+echo $github_token $github_repository $github_username $path_printercfg $path_mainsailcfg $path_moonrakercfg $path_timelapsecfg $backup_folder
 cd $parent_path
 
 #check backup folder or create one
-if [ ! -d "$parent_path/$backup_folder" ]; then
-  mkdir $parent_path/$backup_folder
+if [ ! -d "$backup_folder" ]; then
+  mkdir $backup_folder
 fi
 
 #copy important files into backup folder
