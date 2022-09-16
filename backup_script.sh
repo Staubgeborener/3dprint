@@ -1,14 +1,18 @@
+parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+
 #initializing
-github_token=`grep 'github_token=' .env | sed 's/^.*=//'`
-github_username=`grep 'github_username=' .env | sed 's/^.*=//'`
-github_repository=`grep 'github_repository=' .env | sed 's/^.*=//'`
+github_token=`grep 'github_token=' $parent_path/.env | sed 's/^.*=//'`
+github_username=`grep 'github_username=' $parent_path/.env | sed 's/^.*=//'`
+github_repository=`grep 'github_repository=' $parent_path/.env | sed 's/^.*=//'`
 
-path_printercfg=`grep 'path_printercfg=' .env | sed 's/^.*=//'`
-path_mainsailcfg=`grep 'path_mainsailcfg=' .env | sed 's/^.*=//'`
-path_moonrakercfg=`grep 'path_moonrakercfg=' .env | sed 's/^.*=//'`
-path_timelapsecfg=`grep 'path_timelapsecfg=' .env | sed 's/^.*=//'`
+path_printercfg=`grep 'path_printercfg=' $parent_path/.env | sed 's/^.*=//'`
+path_mainsailcfg=`grep 'path_mainsailcfg=' $parent_path/.env | sed 's/^.*=//'`
+path_moonrakercfg=`grep 'path_moonrakercfg=' $parent_path/.env | sed 's/^.*=//'`
+path_timelapsecfg=`grep 'path_timelapsecfg=' $parent_path/.env | sed 's/^.*=//'`
 
-backup_path=`grep 'backup_path=' .env | sed 's/^.*=//'`
+backup_path=`grep 'backup_path=' $parent_path/.env | sed 's/^.*=//'`
+
+cd $parent_path
 
 #check backup folder or create one
 if [ ! -d "$backup_path" ]; then
@@ -19,7 +23,9 @@ fi
 cp $path_printercfg $path_mainsailcfg $path_moonrakercfg $path_timelapsecfg $backup_path
 
 #git
-git rm -rf --cached .env
+git init
+git rm -rf --cached $parent_path/.env
 git add .
+#git --git-dir /home/pi/3dprint/ add $backup_path
 git commit -m "new backup from $(date +"%d-%m-%y")"
 git push https://"$github_token"@github.com/"$github_username"/"$github_repository".git
