@@ -1,4 +1,3 @@
-test
 # 3dprint
 ### Backup of my 3d printing files
 
@@ -20,7 +19,7 @@ Copy the new token into the `.env` file at `github_token`. Add your username in 
 
 Adjust the remaining paths in the `.env` file where your files are located or add even more file. I am using the default paths. If you want to add more files please keep an eye to [line 19](https://github.com/Staubgeborener/3dprint/blob/main/backup_script.sh#L19) of the `backup_script.sh`.
 
-Since i like to sort the files in appropriate folders i have adjusted the parameter `backup_path` with `./klipper`. You could also use `backup_path=.` for example.
+Since i like to sort the files in appropriate folders i have adjusted the parameter `backup_folder` with `./klipper`. You could also use `backup_folder=.` for example.
 
 Thats pretty much it. I let the script start automatically every time i start my mainsailos. 
 Type `crontab -e` and add this line:
