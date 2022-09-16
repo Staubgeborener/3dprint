@@ -10,12 +10,12 @@ path_mainsailcfg=`grep 'path_mainsailcfg=' $parent_path/.env | sed 's/^.*=//'`
 path_moonrakercfg=`grep 'path_moonrakercfg=' $parent_path/.env | sed 's/^.*=//'`
 path_timelapsecfg=`grep 'path_timelapsecfg=' $parent_path/.env | sed 's/^.*=//'`
 
-backup_folder=`grep 'backup_path=' $parent_folder/.env | sed 's/^.*=//'`
+backup_folder=`grep 'backup_folder=' $parent_folder/.env | sed 's/^.*=//'`
 
 cd $parent_path
 
 #check backup folder or create one
-if [ ! -d "$backup_path" ]; then
+if [ ! -d "$backup_folder" ]; then
   mkdir $backup_folder
 fi
 
