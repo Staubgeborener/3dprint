@@ -12,6 +12,8 @@ path_timelapsecfg=`grep 'path_timelapsecfg=' $parent_path/.env | sed 's/^.*=//'`
 
 backup_folder=`grep 'backup_folder=' $parent_folder/.env | sed 's/^.*=//'`
 
+cat $parent_folder/.env
+
 echo $backup_folder
 echo $github_token $github_repository $github_username $path_printercfg $path_mainsailcfg $path_moonrakercfg $path_timelapsecfg $backup_folder
 cd $parent_path
