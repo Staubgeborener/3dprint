@@ -1,5 +1,4 @@
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
-touch $parent_path/1geht
 
 #initializing
 github_token=`grep 'github_token=' $parent_path/.env | sed 's/^.*=//'`
