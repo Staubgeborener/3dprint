@@ -10,6 +10,7 @@ path_mainsailcfg=`grep 'path_mainsailcfg=' $parent_path/.env | sed 's/^.*=//'`
 path_moonrakercfg=`grep 'path_moonrakercfg=' $parent_path/.env | sed 's/^.*=//'`
 path_timelapsecfg=`grep 'path_timelapsecfg=' $parent_path/.env | sed 's/^.*=//'`
 path_telegramcfg=`grep 'path_telegramcfg=' $parent_path/.env | sed 's/^.*=//'`
+path_crowsnestcfg=`grep 'path_crowsnestcfg=' $parent_path/.env | sed 's/^.*=//'`
 path_pacalcfg=`grep 'path_pacalcfg=' $parent_path/.env | sed 's/^.*=//'`
 path_getprobelimitcalcfg=`grep 'path_getprobelimitcalcfg=' $parent_path/.env | sed 's/^.*=//'`
 path_savedvariablescfg=`grep 'path_savedvariablescfg=' $parent_path/.env | sed 's/^.*=//'`
