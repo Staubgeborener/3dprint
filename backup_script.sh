@@ -26,7 +26,7 @@ if [ ! -d "$parent_path/$backup_folder" ]; then
 fi
 
 #copy important files into backup folder
-cp $path_printercfg $path_mainsailcfg $path_moonrakercfg $path_timelapsecfg $path_telegramcfg $path_crowsnnestcfg $path_pacalcfg $path_getprobelimitcalcfg $path_savedvariablescfg $parent_path/$backup_folder
+cp $path_printercfg $path_mainsailcfg $path_moonrakercfg $path_timelapsecfg $path_telegramcfg $path_crowsnestcfg $path_pacalcfg $path_getprobelimitcalcfg $path_savedvariablescfg $parent_path/$backup_folder
 
 #git
 git init
