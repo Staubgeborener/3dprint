@@ -16,7 +16,6 @@ path_pacalcfg=`grep 'path_pacalcfg=' $parent_path/.env | sed 's/^.*=//'`
 path_getprobelimitcalcfg=`grep 'path_getprobelimitcalcfg=' $parent_path/.env | sed 's/^.*=//'`
 path_savedvariablescfg=`grep 'path_savedvariablescfg=' $parent_path/.env | sed 's/^.*=//'`
 
-
 backup_folder=`grep 'backup_folder=' $parent_path/.env | sed 's/^.*=//'`
 
 cd $parent_path
