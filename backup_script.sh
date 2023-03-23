@@ -15,6 +15,7 @@ path_adxlcfg=`grep 'path_adxlcfg=' $parent_path/.env | sed 's/^.*=//'`
 path_pacalcfg=`grep 'path_pacalcfg=' $parent_path/.env | sed 's/^.*=//'`
 path_getprobelimitcalcfg=`grep 'path_getprobelimitcalcfg=' $parent_path/.env | sed 's/^.*=//'`
 path_savedvariablescfg=`grep 'path_savedvariablescfg=' $parent_path/.env | sed 's/^.*=//'`
+path_pa_flow_calibratecfg=`grep 'path_pa_flow_calibratecfg=' $parent_path/.env | sed 's/^.*=//'`
 
 backup_folder=`grep 'backup_folder=' $parent_path/.env | sed 's/^.*=//'`
 
@@ -26,7 +27,7 @@ if [ ! -d "$parent_path/$backup_folder" ]; then
 fi
 
 #copy important files into backup folder
-cp $path_printercfg $path_mainsailcfg $path_moonrakercfg $path_timelapsecfg $path_telegramcfg $path_crowsnestcfg $path_adxlcfg $path_pacalcfg $path_getprobelimitcalcfg $path_savedvariablescfg $parent_path/$backup_folder
+cp $path_printercfg $path_mainsailcfg $path_moonrakercfg $path_timelapsecfg $path_telegramcfg $path_crowsnestcfg $path_adxlcfg $path_pacalcfg $path_getprobelimitcalcfg $path_savedvariablescfg $path_pa_flow_calibratecfg $parent_path/$backup_folder
 
 #git
 git init
