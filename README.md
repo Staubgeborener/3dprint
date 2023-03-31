@@ -19,7 +19,7 @@ Modify the `.env` file:
 
 Copy the new token into the `.env` file at `github_token`. Add your username in `github_username` and change the `github_repository` to your backup repository name in GitHub (in my case: 3dprint).
 
-Adjust the remaining paths in the `.env` file where your files are located or add even more file. I am using the default paths. If you want to add more files please keep an eye to [line 30](https://github.com/Staubgeborener/3dprint/blob/main/backup_script.sh#L30) of the `backup_script.sh`.
+Adjust the remaining paths in the `.env` file where your files are located or add even more file. I am using the default paths.
 
 Since i like to sort the files in appropriate folders i have adjusted the parameter `backup_folder` with `./klipper`. You could also use `backup_folder=.` for example.
 
