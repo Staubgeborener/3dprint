@@ -17,7 +17,12 @@ fi
 
 #copy important files into backup folder
 #cp $(grep 'path_' $parent_path/.env | sed 's/^.*=//') $parent_path/$(grep 'backup_folder=' $parent_path/.env | sed 's/^.*=//')
-cp "$(grep 'path_' "$parent_path"/.env | sed 's/^.*=//')" "$parent_path/$(grep 'backup_folder=' "$parent_path"/.env | sed 's/^.*=//')"
+#cp "$(grep 'path_' "$parent_path"/.env | sed 's/^.*=//')" "$parent_path/$(grep 'backup_folder=' "$parent_path"/.env | sed 's/^.*=//')"
+# Copy important files into backup folder
+while read -r path; do
+  file=$(basename "$path")
+  cp "$path" "$parent_path/$backup_folder/$file"
+done < <(grep 'path_' "$parent_path"/.env | sed 's/^.*=//')
 
 #git
 git init
