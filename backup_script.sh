@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
 
-parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+parent_path=$(cd "$(dirname "${BASH_SOURCE[0]}")"; pwd -P)
 
-#initializing
-github_token=`grep 'github_token=' $parent_path/.env | sed 's/^.*=//'`
-github_username=`grep 'github_username=' $parent_path/.env | sed 's/^.*=//'`
-github_repository=`grep 'github_repository=' $parent_path/.env | sed 's/^.*=//'`
+# Initialize variables from .env file
+github_token=$(grep 'github_token=' "$parent_path"/.env | sed 's/^.*=//')
+github_username=$(grep 'github_username=' "$parent_path"/.env | sed 's/^.*=//')
+github_repository=$(grep 'github_repository=' "$parent_path"/.env | sed 's/^.*=//')
+backup_folder=$(grep 'backup_folder=' "$parent_path"/.env | sed 's/^.*=//')
 
-backup_folder=`grep 'backup_folder=' $parent_path/.env | sed 's/^.*=//'`
-
-cd $parent_path
+cd "$parent_path" || exit
 
 #check backup folder or create one
 if [ ! -d "$parent_path/$backup_folder" ]; then
