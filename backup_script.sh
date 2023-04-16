@@ -23,8 +23,8 @@ done < <(grep 'path_' "$parent_path"/.env | sed 's/^.*=//')
 
 #git
 git init
-git rm -rf --cached $parent_path/.env
-git add $parent_path
-git commit -m "new backup from $(date +"%d-%m-%y")"
-#git push https://"$github_token"@github.com/"$github_username"/"$github_repository".git
-git push "https://$github_token@$github.com/$github_username/$github_repository"
+git rm -rf --cached "$parent_path"/.env
+git add "$parent_path"
+git commit -m "New backup from $(date +"%d-%m-%y")"
+git push https://"$github_token"@github.com/"$github_username"/"$github_repository".git
+
