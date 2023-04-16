@@ -15,9 +15,6 @@ if [ ! -d "$parent_path/$backup_folder" ]; then
   mkdir "$parent_path/$backup_folder"
 fi
 
-#copy important files into backup folder
-#cp $(grep 'path_' $parent_path/.env | sed 's/^.*=//') $parent_path/$(grep 'backup_folder=' $parent_path/.env | sed 's/^.*=//')
-#cp "$(grep 'path_' "$parent_path"/.env | sed 's/^.*=//')" "$parent_path/$(grep 'backup_folder=' "$parent_path"/.env | sed 's/^.*=//')"
 # Copy important files into backup folder
 while read -r path; do
   file=$(basename "$path")
@@ -29,4 +26,5 @@ git init
 git rm -rf --cached $parent_path/.env
 git add $parent_path
 git commit -m "new backup from $(date +"%d-%m-%y")"
-git push https://"$github_token"@github.com/"$github_username"/"$github_repository".git
+#git push https://"$github_token"@github.com/"$github_username"/"$github_repository".git
+git push "https://$github_token@$github_username/$github_repository.git"
