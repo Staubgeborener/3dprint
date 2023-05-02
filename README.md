@@ -12,4 +12,5 @@ I use the script `backup_script.sh` to automatically upload my Klipper files as 
 * Mainboard: BIGTREETECH SKR Mini E3
 * Extruder: Direct Drive ([Hydra Fan Duct](https://www.thingiverse.com/thing:4062242))
 * Probe: BLTouch
-* Other Mods: [Belted Z Mod](https://kevinakasam.com/belt-driven-ender-3/)
+* Other Mods: [Belted Z Mod](https://kevinakasam.com/belt-driven-ender-3/), [Ender 3 V2 Silent Pack](https://www.thingiverse.com/thing:4644985), [Squash Ball Feet](https://www.thingiverse.com/thing:3044013)
+* Slicer of choice: [OrcaSlicer](https://github.com/SoftFever/OrcaSlicer), [SuperSlicer](https://github.com/supermerill/SuperSlicer) 
