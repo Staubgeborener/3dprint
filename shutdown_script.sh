@@ -4,7 +4,7 @@
 
 if grep -q "autoonoroff = 1" "/home/pi/klipper_config/saved_variables.cfg"; then
         curl http://nuc:1880/osram-off > /dev/null 2>&1 &
-        sleep 5
+        sleep 1
         poweroff
 else
 	exit 1
