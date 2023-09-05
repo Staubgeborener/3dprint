@@ -1,3 +1,6 @@
+> [!NOTE]  
+> Quite obsolete since I only print on my Bambu Lab X1-Carbon with AMS.
+
 # 3dprint
 ### Backup of my 3d printing files
 
