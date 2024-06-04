@@ -13,7 +13,7 @@ This backup is provided by [klipper-backup](https://github.com/Staubgeborener/kl
 * Other Mods: [Servo-powered Nozzle Brush](https://github.com/tronfu/Voron-Mods/tree/main/Servo_Nozzle_Brush)
 * Slicer of choice: [OrcaSlicer](https://github.com/SoftFever/OrcaSlicer)
 
-(Need `@reboot sed -i 's\TRSYNC_TIMEOUT = 0.025\TRSYNC_TIMEOUT = 0.05\g' ~/klipper/klippy/mcu.py` as crontab in order to fix [timeout issue](https://canbus.esoterical.online/troubleshooting/timeout_during_homing_probing.html)
+(Need `@reboot sed -i 's\TRSYNC_TIMEOUT = 0.025\TRSYNC_TIMEOUT = 0.05\g' ~/klipper/klippy/mcu.py` as crontab in order to fix [timeout issue](https://canbus.esoterical.online/troubleshooting/timeout_during_homing_probing.html))
 
 ### Bambu Lab X1-Carbon with AMS
 * Other Mods: Light mod incoming
