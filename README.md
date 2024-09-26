@@ -1,7 +1,7 @@
-# klipper-backup 💾 
-Klipper backup script for manual or automated GitHub backups
+# Klipper-Backup 💾 
+Klipper backup script for manual or automated GitHub backups 
 
-This backup is provided by [klipper-backup](https://github.com/Staubgeborener/klipper-backup).
+This backup is provided by [Klipper-Backup](https://github.com/Staubgeborener/klipper-backup).
 
 ## Setup
 ### Voron 2.4r2 (350)
@@ -17,4 +17,4 @@ This backup is provided by [klipper-backup](https://github.com/Staubgeborener/kl
 
 ### Bambu Lab X1-Carbon with AMS
 * Other Mods: Light mod incoming
-* Slicer of choice: [BambuStudio](https://github.com/bambulab/BambuStudio) 
+* Slicer of choice: [BambuStudio](https://github.com/bambulab/BambuStudio)
