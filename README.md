@@ -5,7 +5,7 @@ This backup is provided by [Klipper-Backup](https://github.com/Staubgeborener/kl
 
 ## Setup
 ### Voron 2.4r2 (350)
-* Firmware: [Klipper](https://www.klipper3d.org/) (Raspberry Pi 3 Model B+)
+* Firmware: [Klipper](https://www.klipper3d.org/) (Raspberry Pi 5, 8GB RAM)
 * Interface: [Mainsail](https://docs.mainsail.xyz/)
 * Mainboard: [BIGTREETECH Octopus](https://bigtree-tech.com)
 * Extruder: Direct Drive
