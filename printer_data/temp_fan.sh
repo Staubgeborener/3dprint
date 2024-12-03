@@ -8,7 +8,7 @@ TEMP_FILE="/sys/class/thermal/thermal_zone0/temp"
 CURRENT_TEMP=$(cat $TEMP_FILE)
 CURRENT_TEMP=$((CURRENT_TEMP / 1000))
 
-THRESHOLD_TEMP=60
+THRESHOLD_TEMP=70
 
 if [ "$state" != "printing" ]; then
     if [ $CURRENT_TEMP -ge $THRESHOLD_TEMP ]; then
