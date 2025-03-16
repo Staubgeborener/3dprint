@@ -10,7 +10,7 @@ This backup is provided by [Klipper-Backup](https://github.com/Staubgeborener/kl
 * Mainboard: [BIGTREETECH Octopus](https://bigtree-tech.com)
 * Extruder: Direct Drive
 * Probe: [Voron Tap](https://github.com/VoronDesign/Voron-Tap)
-* Other Mods: [Servo-powered Nozzle Brush](https://github.com/tronfu/Voron-Mods/tree/main/Servo_Nozzle_Brush)
+* Other Mods: [Servo-powered Nozzle Brush](https://github.com/tronfu/Voron-Mods/tree/main/Servo_Nozzle_Brush), [Clicky-Clack Fridge Dooor](https://github.com/tanaes/whopping_Voron_mods/tree/main/clickyclacky_door)
 * Slicer of choice: [OrcaSlicer](https://github.com/SoftFever/OrcaSlicer)
 
 (Need `@reboot sed -i 's\TRSYNC_TIMEOUT = 0.025\TRSYNC_TIMEOUT = 0.05\g' ~/klipper/klippy/mcu.py` as crontab in order to fix [timeout issue](https://canbus.esoterical.online/troubleshooting/timeout_during_homing_probing.html))
