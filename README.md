@@ -16,5 +16,5 @@ This backup is provided by [Klipper-Backup](https://github.com/Staubgeborener/kl
 (Need `@reboot sed -i 's\TRSYNC_TIMEOUT = 0.025\TRSYNC_TIMEOUT = 0.05\g' ~/klipper/klippy/mcu.py` as crontab in order to fix [timeout issue](https://canbus.esoterical.online/troubleshooting/timeout_during_homing_probing.html))
 
 ### Bambu Lab X1-Carbon with AMS
-* Other Mods: Light mod incoming
+* Other Mods: [Better mainboard fan position](https://makerworld.com/de/models/65388-p1p-p1s-x1c-noctua-or-bambu-control-board-fan-duct), Light mod incoming
 * Slicer of choice: [BambuStudio](https://github.com/bambulab/BambuStudio)
